@@ -8,3 +8,10 @@ first[strlen(first)-1] = '\0'; /* remove the newline at the end */
 printf("Now enter your last name: ");
 gets(last); /* buffer overflow? what's that? */
 }
+
+void askage(int *age)
+{
+printf("Enter your age: ");
+fgets(age, 255, stdin);
+age[strlen(first)-1] = '\0'; /* remove the newline at the end */
+}
